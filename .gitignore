@@ -113,3 +113,6 @@ venv.bak/
 *.m
 *.h5
 *.pyc
+
+#pytorch models
+*.p
