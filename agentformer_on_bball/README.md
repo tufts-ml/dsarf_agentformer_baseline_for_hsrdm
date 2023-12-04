@@ -7,20 +7,6 @@ Ye Yuan, Xinshuo Weng, Yanglan Ou, Kris Kitani
 [[website](https://www.ye-yuan.com/agentformer)] [[paper](https://arxiv.org/abs/2103.14023)]
 
 
-
-# Installation 
-
-### Environment
-* **Tested OS:** MacOS, Linux
-* Python >= 3.7
-* PyTorch == 1.8.0
-### Dependencies:
-1. Install [PyTorch 1.8.0](https://pytorch.org/get-started/previous-versions/) with the correct CUDA version.
-2. Install the dependencies:
-    ```
-    pip install -r requirements.txt
-    ```
-
 ### Dataset
 * We already included a converted version of the basketball data (small, medium and large sets) compatible with the agentformer's dataloader under [datasets/basketball/](datasets/basketball).
 
