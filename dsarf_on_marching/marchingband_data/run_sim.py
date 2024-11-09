@@ -151,33 +151,14 @@ def system_regimes_gt(num_sequences, trigger):
 
     return system_regimes
 
-def system_transitions_gt(system_regimes): 
-    T = 10299
-    K = 6
-    expected_joints= np.zeros((T, K, K))
-
-    # Fill the T x K x K matrix with one-hot encoded matrices
-    for t in range(T):
-        # Get the column index where '1' should be placed based on system_regimes
-        column_with_one = np.argmax(system_regimes[t])  # Get the index of the '1' in system_regimes
-        expected_joints[t, column_with_one, column_with_one] = 1  # Place the '1' in the corresponding row
-
-    return expected_joints
-
-
-
 
 if __name__ == '__main__':
 
     GLOBAL_MSG = 'LAUGHLAUGHLAUGHLAUGHLAUGHLAUGHLAUGHLAUGHLAUGHLAUGH'
     N = 64
     T = 200
-    array1 = generate_training_data(GLOBAL_MSG, N, T, 0)
+    data = generate_training_data(GLOBAL_MSG, N, T, 0)
 
-    for i in range(1,10): 
-        plot_segmentation_gt(array1,i)
-
-    #x = system_regimes_gt(10, [3333,3394,3730,4824,4889,4969,8919,8977,9036,9093,9168,10314,10376])
 
     
     
